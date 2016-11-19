@@ -1,0 +1,259 @@
+html, body, h1, h2, section, main, figure, img, header, iframe, footer {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@font-face { 
+  font-family: KenVector; 
+  src: url(../Others/KenVector.ttf); 
+} 
+
+html {
+  background-image: url("../images/bkg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: black;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-size: calc(1vw + 13px);
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.1em;
+  word-spacing: 0.25em;
+   line-height: 130%;
+}
+
+span {
+  text-shadow: 2px 2px #dd0000;
+}
+
+h2 {
+  margin: 8px;
+  padding: 0;
+  font-size: 21px;
+  font-size: calc(1vw + 9px);
+  color: #111;
+  text-shadow: 2px 2px #DDD;
+}
+
+header h1, header h2 {
+  height: 0px;
+  position: absolute;
+  left: -9999px;
+}
+
+#wrapper {
+  position: relative;
+  margin: 0px auto;
+  min-height: 98%;
+  max-width: 1200px;
+  width: 96vw;
+  padding: 2px;
+}
+
+#whatsapp {
+  display: none;
+  order: 0;
+}
+
+main {
+  display: table;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+  margin-top: 30vh;
+  margin-top: 15%;
+  padding-bottom: 150px;
+  overflow: hidden;
+  clear: both;
+}
+
+section {
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  float: left;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 10px auto;
+  padding: 0px 10px;
+  width: 47%;
+}
+
+section a {
+  display: block;
+  text-align: center;
+}
+section a img {
+  width: 40%;
+}
+section.B {
+  float: right;
+  margin: 30px auto;
+  height: 340px;
+  height: 28.5vw;
+  max-height: 340px;
+}
+section.B figure {
+  background-image: url("../images/videobkg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  text-align: center;
+  width: 100%;
+  height: 100%;
+
+}
+section.B figure iframe {
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  padding: 7% 6% 7% 8%;
+}
+
+figure {
+  height: 28%;
+  margin: 0px auto;
+}
+figure img {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.A h1, .A h2 {
+  display: block;
+  margin: 20px;
+  padding: 10px;
+  border-top: 1px solid #AAA;
+  border-bottom: 1px solid #AAA;
+}
+
+.link {
+    padding: 3px;
+    border: 2px solid rgba(240,240,240,0);
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius:  8px 8px 8px 8px;
+    -webkit-border-radius:  8px 8px 8px 8px;
+}
+
+.link:hover {
+    border: 2px solid rgba(240,240,240,255);
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius:  15px 15px 15px 15px;
+    -webkit-border-radius:  15px 15px 15px 15px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 5px 15%;
+  height: 115px;
+  width: 60%;
+  border-top: 1px solid #AAA;
+  clear: both;
+}
+footer div {
+  display: table;
+  display: flex;
+  text-align: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+footer div a img {
+  max-width: 80px;
+  width: 100%;
+  height: auto;
+  padding: 1px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+}
+footer div a img:hover {
+  border: 3px solid black;
+}
+
+footer div a {
+  margin: 0px 10px;
+  order: 3;
+}
+
+#twitter {
+  order: 2;
+}
+
+
+@media screen and (max-width: 700px) {
+  main {
+    position: static;
+    margin-top: 3%;
+  }
+
+  section {
+    float: none;
+    margin: 10px auto;
+    max-width: 500px;
+    width: 98%;
+  }
+  section.B {
+    height: 59.4vw;
+    float: none;
+    margin: 10px auto;
+  }
+
+  footer div a img {
+    width: 80%;
+    height: auto;
+  }
+
+section.B figure iframe {
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  padding: 9% 6% 9% 8%;
+}
+
+  header {
+    height: 0px;
+  }
+
+  #whatsapp {
+    display: inline;
+  }
+
+  #twitter {
+  order: 3;
+}
+
+  h1, h2, h3 {
+    font-size: calc(2vw + 9px);
+  }
+}
